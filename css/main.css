@@ -1,0 +1,41 @@
+.Wrap {
+    width: 1900px;
+    overflow-x: hidden;
+}
+
+header {
+    color: #fff;
+    background: #000;
+}
+
+header .container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    position: relative;
+    line-height: 70px;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #919191;
+    top: 100%;
+    left: 50%;
+    margin-left: -50%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+header ul li {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 40px;
+}
