@@ -14,18 +14,18 @@ $(function () {
 
     $('.main_menu .s_menu').click(function () {
         $('.main_menu .s_menu').toggleClass('on');
-        $('.main_menu .m_menu').removeClass('on');
+        $('.main_menu .m_menu').addClass('on');
     });
 
-    $('ul.top_banner li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+    $('ul.top_banner li').click(function () {
+        var tab_id = $(this).attr('data-tab');
 
-		$('ul.top_banner li').removeClass('current');
-		$('.tab-content').removeClass('current');
+        $('ul.top_banner li').removeClass('current');
+        $('.tab-content').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	})
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+    })
 
     AOS.init();
 })
